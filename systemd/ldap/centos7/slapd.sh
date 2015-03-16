@@ -25,7 +25,7 @@ if [ ! -e /var/lib/ldap/docker_bootstrapped ]; then
           status "found already-configured slapd"
 fi
 
-status "starting slapd"
-set -x
-exec /usr/sbin/slapd -h "ldap:///" -u ldap -g ldap -d 3
+#status "starting slapd"
+#set -x
+#exec /usr/sbin/slapd -h "ldap:///" -u ldap -g ldap -d 3
 
