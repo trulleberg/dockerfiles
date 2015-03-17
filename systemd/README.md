@@ -1,9 +1,7 @@
 # Systemd Dockerfiles
 
-As the official CentOS Dockerfiles come with fakesystemd, I googled a bit and
-found
-[this](https://jperrin.github.io/centos/2014/09/25/centos-docker-and-systemd/)
-usefull link.
+As the official CentOS Dockerfiles come with fakesystemd, I googled a bit and found  [this](https://jperrin.github.io/centos/2014/09/25/centos-docker-and-systemd/) usefull link.
+
 
 In short:
 Create a Dockerfile like this:
@@ -26,8 +24,7 @@ VOLUME [ "/sys/fs/cgroup" ]
 CMD ["/usr/sbin/init"]
 ```
 
-This grabs a 7.0 Image of CentOS (Rolling release should work, if you are using
-CentOS 7), removes the fake systemd
+This grabs a 7.0 Image of CentOS (Rolling release should work, if you are using ` CentOS 7 `), removes the fake systemd
 
 Then build the image:
 ```
